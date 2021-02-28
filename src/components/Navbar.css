@@ -1,0 +1,11 @@
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:darkcyan;
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: 400; 
+}
