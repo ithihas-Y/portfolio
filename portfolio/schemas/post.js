@@ -24,6 +24,12 @@ export default {
       to: {type: 'author'},
     },
     {
+      name: 'project',
+      title : 'Project',
+      type : 'reference',
+      to: {type:'project'}
+    },
+    {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
