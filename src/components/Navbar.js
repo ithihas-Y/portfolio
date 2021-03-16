@@ -1,19 +1,32 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import './Navbar.css'
+import {Menu} from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css'
 
 export default function NavBar() {
     return(
-        <header>
-            <div>
-            <nav className="navbar">
-                <NavLink activeClassName="home" to="/" exact>Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/post">Post</NavLink>
-            </nav>
-            </div>
-            
-        </header>
+        <div style={{marginTop:'1px'}}>
+        <Menu size='huge' fluid widths={3} inverted>
+        <Menu.Item
+          name='home' 
+        >
+            <NavLink activeClassName="home" to="/" exact>Home</NavLink>
+        </Menu.Item>
+
+        <Menu.Item
+          name='about'
+        >
+          <NavLink to="/about">About</NavLink>
+        </Menu.Item>
+
+        <Menu.Item
+          name='post'
+        >
+         <NavLink to="/post">Posts</NavLink> 
+        </Menu.Item>
+      </Menu>
+      </div>
     );
     
 }
+
