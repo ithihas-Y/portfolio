@@ -11,7 +11,7 @@ export default function Home(){
 
 
     return (
-        <div style={{paddingBottom:'20px'}}>
+        <div style={{paddingBottom:'0px'}}>
             <Card raised centered >
                 <Image src={pp} size='massive' />
                 <Card.Content>

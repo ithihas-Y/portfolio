@@ -6,7 +6,7 @@ import 'semantic-ui-css/semantic.min.css'
 export default function NavBar() {
     return(
         <div style={{marginTop:'1px'}}>
-        <Menu size='huge' fluid widths={3} inverted>
+        <Menu size='huge' fluid widths={4} inverted>
         <Menu.Item
           name='home' 
         >
@@ -23,6 +23,11 @@ export default function NavBar() {
           name='post'
         >
          <NavLink to="/post">Posts</NavLink> 
+        </Menu.Item>
+
+        <Menu.Item name='ChatRoom'>
+          <NavLink to="/chatroom">ChatRoom</NavLink>
+
         </Menu.Item>
       </Menu>
       </div>

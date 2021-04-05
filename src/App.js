@@ -7,8 +7,10 @@ import about from "./components/about";
 import project from "./components/project"
 import NavBar from "./components/Navbar"
 import "./App.css";
+import chatroom from "./components/chatroom";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <NavBar/>
@@ -18,6 +20,7 @@ function App() {
         <Route component={SinglePost} exact path='/post/:slug' />
         <Route component={project} path='/project'/>
         <Route component={about} path='/about' />
+        <Route component={chatroom} path='/chatroom'/>
       </Switch>
 
     </BrowserRouter>
