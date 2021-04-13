@@ -10,7 +10,7 @@ const io = socketio(server);
 
 //app.use(express.static(path.join(__dirname, 'build')));
 
-let messages=[];
+let messages=[{id:'from boss',msg:'hello boys'}];
 
 
 io.on('connection',(socket)=>{
